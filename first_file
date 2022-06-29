@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            line-height: 100%;
+            align-items: center;
+            color: grey;
+            height: 25px;
+            margin: 20px;
+        }
+
+        .box_1 p {
+            line-height: 30px;
+        }
+
+        .box_2 {
+            position: relative;
+            margin: 0px;
+            width: auto;
+            height: 800px;
+            background-color: orange;
+            text-align: center;
+        }
+
+        .box_2 div {
+            height: auto;
+            width: 500px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        #sub {
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            background-color: aliceblue;
+            margin: auto;
+            position: relative;
+            border-radius: 20px 20px;
+        }
+
+        #sub span {
+            margin: 0;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .box_3 {
+            position: relative;
+            margin: 0px;
+            background-color: rgb(40, 40, 43);
+            height: 700px;
+            width: auto;
+        }
+
+        .unbox {
+            position: absolute;
+            right: 0; left: 0;
+            top: 10%;
+            bottom: 10%;
+            margin: auto;
+            overflow: auto;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            font-size: 19px;
+            text-align: center;
+        }
+
+        table td {
+            border: 1px solid grey;
+        }
+
+        table span {
+            display: inline-block;
+            border: 1px solid orangered;
+            background-color: orangered;
+            border-radius: 20px 20px;
+            width: 60%;
+            height: 30px;
+            vertical-align: bottom;
+        }
+
+        .bergcollage {
+            margin: 100px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 400px 400px;
+            grid-gap: 15px;
+        }
+
+        .berg_1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+            background-image: url(berg.jpg);
+            background-size: 100% 100%;
+        }
+
+        .berg_2 {
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+            background-image: url(berg.jpg);
+            background-size: 100% 100%;
+        }
+
+        .berg_3 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background-image: url(berg.jpg);
+            background-size: 100% 100%;
+        }
+
+        .berg_4 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background-image: url(berg.jpg);
+            background-size: 100% 100%;
+        }
+
+        #txt_in_img {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            color: aliceblue;
+            margin: 25px
+        }
+
+        .gallery {
+            margin: 100px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 200px 200px;
+            grid-gap: 15px;
+        }
+
+        .aloe_1 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            background-image: url(aloe_pot.jpg);
+            background-size: 100% 100%;
+        }
+
+        .aloe_2 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            background-image: url(aloe_girl.jpg);
+            background-size: 100% 100%;
+        }
+
+        .aloe_3 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            background-image: url(aloe.jpg);
+            background-size: 100% 100%;
+        }
+
+        .aloe_4 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background-image: url(wreath.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+
+        .text_gallery {
+            font-size: 5rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: right;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .text_aloe {
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            color: grey;
+            line-height: 32px;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+
+    <div class="logo">
+        <p style="font-size: 80%">Page 1</p>
+        <p style="font-size: 130%">logo</p>
+        <div>
+            <img src="icons/facebook.png" alt="facebook" width="20px">
+            <img src="icons/telegram.png" alt="telegram" width="20px">
+            <img src="icons/instagram.png" alt="instagram" width="20px">
+        </div>
+    </div>
+
+    <div class="box_1" style="margin: 20px; overflow: auto;  height: 100%;">
+        <h2>Sample Headline</h2>
+        <p class="">Eos corporis dolores et praesentium ratione in impedit provident non dolor pariatur ut omnis fugit?
+            Ab
+            sapiente sunt eum sint voluptatem est aliquam culpa ut veniam dolorem. Ex quibusdam fuga ut illo quae et
+            itaque cupiditate rem illum quidem quo voluptas beatae! Qui distinctio soluta vel corporis rerum est
+            laudantium totam et blanditiis eaque.
+            Non consectetur reprehenderit ut quia harum qui quod dolorum ad nostrum odit aut voluptatibus dolorum est
+            voluptates soluta. Et mollitia minima hic repudiandae labore eos facilis magni. Cum asperiores fugiat id
+            <img src="berg.jpg" style="width: 300px; float: right; margin: 10px 0px 10px 20px;">
+            obcaecati exercitationem sed dolorem labore vel commodi magnam et ducimus obcaecati et quia dignissimos in
+            deserunt nulla?
+        </p>
+        <h2>Sample Headline</h2>
+        <p>
+            Non consectetur reprehenderit ut quia harum qui quod dolorum ad nostrum odit aut voluptatibus dolorum est
+            voluptates soluta. Et mollitia minima hic repudiandae labore eos facilis magni. Cum asperiores fugiat id
+            obcaecati exercitationem sed dolorem labore vel commodi magnam et ducimus obcaecati et quia dignissimos in
+            deserunt nulla?
+            Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies
+            tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci
+            vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis
+            lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra
+            congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id
+            ornare felis, eget fermentum sapien.
+            Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est,
+            posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam
+            lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis
+            finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in
+            interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+    </div>
+
+
+    <div class="box_2">
+
+        <div>
+            <p style="display: inline; font-size: 6rem; font-weight: bold; color: aliceblue;">DIGITAL DESING STUDIO</p>
+            <p style="text-align: justify; color: aliceblue; line-height: 40px">Lorem ipsum dolor sit amet. Et
+                consectetur enim sit consequuntur quia aut sint dolorem. Et consequatur
+                neque
+                id reiciendis quia qui totam distinctio ut voluptatem amet. Et repellat quia qui beatae enim id
+                consequatur
+                voluptas sed culpa dignissimos quo facilis modi a dolor suscipit est voluptas ducimus.</p>
+            <p id="sub">
+                <span>
+                    submit
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="box_3">
+
+
+            <div class="unbox">
+                <p style="margin: 0px 0px 20px 0px; color: aliceblue; font-size: 50px; text-align: center;">
+                    <span>Promotions plans</span></p>
+                <table>
+                    <tr>
+                        <td
+                            style="width: 400px; height: 50px; background-color: aliceblue; color: black; text-align: left;">
+                            Команда</td>
+                        <td style="width: 300px; background-color: orange;">Розвідники</td>
+                        <td style="width: 300px; background-color: brown;">Охотніки</td>
+                        <td style="width: 300px; background-color: cadetblue;">Ударники</td>
+                    </tr>
+
+                    <tr>
+                        <td style="height: 50px; text-align: left">Кількість</td>
+                        <td>3 000</td>
+                        <td>4 500</td>
+                        <td>41 000</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px; text-align: left">Ціна</td>
+                        <td style="color: orange;">$ 300</td>
+                        <td style="color: brown;">$ 700</td>
+                        <td style="color: cadetblue;">$ 900</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px; text-align: left">Час підготовки</td>
+                        <td>3-5 днів</td>
+                        <td>8-10 днів</td>
+                        <td>11 днів</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px; text-align: left">Активний захист</td>
+                        <td>&#x2013</td>
+                        <td>&#10004</td>
+                        <td style="color:blueviolet;">&#10004</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px; text-align: left">Активний напад</td>
+                        <td>&#x2013</td>
+                        <td>&#10004</td>
+                        <td style="color:blueviolet;">&#10004</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px; text-align: left">Процент витримки</td>
+                        <td>0%</td>
+                        <td>26%</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td style="height: 50px;">&nbsp;</td>
+                        <td>
+                            <span>Оформити</span>
+                        </td>
+                        <td>
+                            <span>Оформити</span>
+                        </td>
+                        <td>
+                            <span>Оформити</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+
+    <section>
+        <div class="bergcollage">
+            <div class="berg_1">
+            </div>
+            <div id="txt_in_img">
+                <p style="font-size: 2rem; font-weight: bold;">Sample Headline</p>
+                <p>Lorem ipsum dolor sit amet. Qui dolore veniam hic explicabo temporibus est praesentium cumque et nemo
+                    similique rem recusandae molestiae. Nam pariatur libero qui nisi quisquam ea nostrum voluptatem. Non
+                    facere corrupti cum reiciendis iure et ipsam quos.</p>
+            </div>
+
+            <div class="berg_2">
+            </div>
+
+            <div class="berg_3">
+            </div>
+
+            <div class="berg_4">
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="aloe_1"></div>
+            <div class="aloe_2"></div>
+            <div class="aloe_3"></div>
+            <div class="aloe_4"></div>
+            <div class="text_gallery">gallery</div>
+            <div class="text_aloe">Qui maxime aspernatur et repellendus commodi et quaerat aperiam. Ut minus vitae aut
+                assumenda voluptate qui consequatur maxime assumenda nihil ex tempore asperiores sed earum molestiae cum
+                consequatur explicabo. In quaerat consequatur et ipsum sapiente qui impedit laborum qui eligendi galisum
+                non dignissimos tempora ut cupiditate sequi et vitae odio?</div>
+        </div>
+    </section>
+</body>
+
+</html>
