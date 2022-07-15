@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    height: 100px;
+    background-color: rgb(67, 65, 65);
+}
+
+#social_networks {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left: 20px;
+}
+
+form {
+    position: relative;
+    width: 300px;
+    border: 1px solid grey;
+    float: right;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%)
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input {
+    width: 100%;
+    height: 42px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    color: grey;
+    font-size: 18px;
+}
+
+#logo {
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42px;
+    color: grey;
+}
+
+#page_16 {
+    float: right;
+    font-size: 42px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footnote {
+    float: left;
+    text-align: center;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.footnote p i {
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    border: 1px solid grey;
+}
+
+.box_1 {
+    padding: 20px;
+}
+
+.empty {
+    width: 60px;
+    height: auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.picture_1 {
+    width: 100%;
+    height: 350px;
+}
+
+#post_content {
+    position: absolute;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    background-color: aliceblue;
+    width: 300px;
+    height: 50px;
+    border: 1px solid grey;
+    font-size: 38px;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+.grid_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    margin: 80px 0 100px 50px;
+}
+
+#berg {
+    background-image: url(picture/berg.jpg);
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    background-size: cover;
+}
+
+#we_are {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    padding: 30px;
+}
+
+#rem_2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    ;
+}
+
+#rem_3 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+#rem_4 {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    background-color: grey;
+}
+
+#rem_2,
+#rem_3,
+#rem_4 {
+    padding: 30px;
+    font-size: 18px;
+}
+
+#taras {
+    width: 300px;
+    height: 400px;
+    float: left;
+    display: block;
+    margin-left: 50px;
+}
+
+#about_use {
+    position: relative;
+    left: 40px;
+    font-size: 24px;
+}
+
+#textcols {
+    column-width: 48%;
+    column-count: 2;
+    column-gap: 4%;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 50px;
+}
+
+#city {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#adres {
+    font-size: 18px;
+}
+
+.email {
+    color: darksalmon;
+    text-decoration: dashed;
+}
+
+.map {
+    position: relative;
+}
+
+.box_2 {
+    display: flex;
+    font-size: 18px;
+}
+
+.unbox {
+    margin: 40px;
+    padding: 18px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#leading {
+    font-size: 32px;
+    color: darksalmon;
+    margin: 0 0 0 50px;
+}
+
+#txt {
+    margin-left: 50px;
+    font-size: 18px;
+    width: 50%;
+}
+
+.numb {
+    margin: 0;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: darksalmon;
+}
+
+.buttone {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 50px;
+    background-color: darksalmon;
+    color: aliceblue;
+    text-decoration: dashed;
+}
+
+#contact {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.yorself {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name {
+    border: none;
+    border-bottom: 3px solid #bdbdbd;
+    font-size: 12px;
+    padding: 0;
+    height: 42px;
+}
+
+#e_mail {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+    padding: 0;
+    height: 42px;
+}
+
+#massage {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid #bdbdbd;
+    font-size: 14px;
+    height: 100px;
+    width: 500px;
+}
+
+.row {
+    border: 2px solid black;
+    margin: 20px 0;
+    width: 124px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.end_icons {
+    float: right;
+    margin-top: -18px;
+}
+
+.end_document {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(67, 65, 65);
+    color: grey;
+}
+
+#end_logo {
+    margin-top: -4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+#Lorem_ipson {
+    font-size: 18px;
+    text-align: center;
+}
+
+.end_icons, #lorem_ipson, #end_logo  {
+    flex: 1 400px;
+}
+
+.end_icons_right {
+    text-align: right;
+}
+
