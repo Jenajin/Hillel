@@ -1,0 +1,226 @@
+a {
+    text-decoration: dashed;
+}
+
+.box_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-width: 1920px;
+    min-height: 700px;
+    background-color: #EEEFF1;
+}
+
+.header {
+    position: absolute;
+    Top: 72px;
+    Left: 399px;
+    display: flex;
+    gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.design_layout {
+    position: absolute;
+    left: 399px;
+    top: 257px;
+}
+
+#design_layout {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+    margin: 0;
+}
+
+#Lorem_ipson {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    width: 540px;
+    height: 67px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-top: 36px;
+}
+
+#buttone {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#about_me {
+    position: absolute;
+    width: 403px;
+    height: 30px;
+    left: 758px;
+    top: 798px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
+#text_about_me {
+    position: absolute;
+    width: 540px;
+    height: 67px;
+    left: 690px;
+    top: 886px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.box_2 {
+    position: absolute;
+    min-width: 1920px;
+    height: 250px;
+    left: 0px;
+    top: 1069px;
+    background-color: #34547A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_2 img {
+    Width: 50px;
+    Height: 50px;
+}
+
+.numbers__item {
+    margin: 100px 454px 100px 409px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+    gap: 49px;
+}
+
+.coder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt_project {
+    display: table-cell;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+
+.txt {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.project {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#how_work {
+    position: absolute;
+    width: 403px;
+    height: 30px;
+    left: 758px;
+    top: 1392px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+}
+
+#txt_how_work {
+    position: absolute;
+    width: 540px;
+    height: 67px;
+    left: 690px;
+    top: 1482px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.video {
+    position: absolute;
+    left: 405px;
+    top: 1624px;
+}
+
+.box_3 {
+    position: absolute;
+    width: 1920px;
+    height: 151px;
+    left: 0px;
+    top: 2324px;
+    background: #34547A;
+}
+
+.end_txt {
+    margin: 50px auto auto 406px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+#ivanov_ivan {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0;
+}
+
+#copyrite {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
